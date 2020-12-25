@@ -9,21 +9,19 @@ body{
     margin: 8rem auto;
     position: absolute;
     left: 50%;
-    top: 0;
-    animation: move 1s infinite;
+    transform: translateX(-50%);
 }
-/* .catch-me::before{
+.catch-me::before{
     content: "";
     height: 50px;
     width: 50px;
     background-color: pink;
     border-radius: 50%;
-    margin: 5rem auto;
+    
     position: absolute;
+    animation: move 1s infinite;
     
-    
-    
-} */
+}
 h1{
     position: absolute;
     text-transform: uppercase;
@@ -34,6 +32,6 @@ h1{
 @keyframes move {
     to{
         transform: scale(2);
-        opacity: 0.5;
+        opacity: 0;
     }
 }
